@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: hidden;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            position: relative;
+            overflow: auto;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 190px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+
+        nav {
+            background-color: transparent;
+            text-align: right;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+        }
+
+        nav::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -2; /* Modified z-index */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        main {
+            margin-top: 60px;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .news-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        #buttonBack {
+            position: absolute;
+            top: 190px;
+            left: 30.4%;
+            transform: translateX(-50%);
+            z-index: 4;
+            padding: 9px 17px;
+            background-color: darkviolet;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #logo {
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5; 
+        }
+
+        #logo img {
+            width: 360px;
+            height: auto;
+        }
+
+        /* Styles for Logo 2 */
+        #logo2 {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            z-index: 5; 
+        }
+
+        #logo2 img {
+            width: 80px;
+            height: auto;
+        }
+
+        #language-dropdown {
+            position: absolute;
+            top: 10px;
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 4;
+            cursor: pointer;
+        }
+
+        #language-dropdown:hover .language-list {
+            display: block;
+        }
+
+        .language-list {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+            margin: 0;
+            top: 30px;
+            right: 0;
+            z-index: 5;
+        }
+
+        .language-list li {
+            margin-bottom: 5px;
+        }
+
+        .language-list a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+    <title>FightsCraft Of Legends</title>
+</head>
+
+<body>
+    <div class="background-container">
+        <section class="scrollable-content">
+            <header>
+                <h2 style="position: absolute; top: 165px; left: 45.4%; transform: translateX(-50%); z-index: 5; color: orange; font-size: 32px;">Developer Letter 1 (22/12/2023)</h2>
+
+                <p style="position: absolute; top: 212px; left: 50.2%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                    On this exhilarating day, we invite you to dive into the extraordinary<br>
+                    universe that has come to life over the past few months with the upcoming Minecraft server<br>
+                    named 'FightsCraft Of Legends.' At the heart of this adventure lies a consuming passion for<br>
+                    innovation and an unwavering determination to create an unparalleled gaming experience.<br>
+                    <br>
+                    We present them to you right now.<br>
+                    <br>—————</p>
+
+                <h3 style="position: absolute; top: 340px; left: 35.5%; transform: translateX(-50%); z-index: 5; color: rgb(0, 255, 64); font-size: 24px;">VISUAL</h3>
+
+                <p style="position: absolute; top: 380px; left: 52%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                    In the enchanting corners of "FightsCraft of Legends," each visual modification has been<br>
+                    meticulously chosen to evoke unique emotions and atmospheres. The visual quality brings subtle<br>
+                    nuances to the landscapes, revealing play of light that dances through the tree canopies and<br>
+                    reflects on winding rivers.<br><br>
+                    These nuances range from the striking realism of Ultra graphics quality to the more ethereal<br>
+                    atmospheres of Low and Medium versions, allowing players to customize their experience based on<br>
+                    their visual preferences.<br><br>
+
+                    <img src="visual_image.jpg" alt="Visual Image" 
+                style="position: absolute; top: 150px; left: 50%; transform: translateX(-50%); z-index: 5; width: 100%; height: auto;">
+                    
+                    <p style="position: absolute; top: 940px; left: 52.1%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                        The vibrant nuances of Extreme graphics embrace the world with intensely immersive light, while<br>
+                        the High version maintains a subtle balance between realism and game aesthetics. The Low and<br>
+                        Medium graphics versions offer a streamlined aesthetic, perfect for those who prefer<br>
+                        immersion while maintaining optimal performance.<br>
+                        <br>
+                        These visual choices come together to create an ever-evolving canvas, reacting to day-night cycles<br>
+                        and weather conditions, ensuring a dynamic and captivating visual experience at every corner of the<br>
+                        "FightsCraft of Legends" world.
+
+                        <h3 style="position: absolute; top: 1100px; left: 36.9%; transform: translateX(-50%); z-index: 5; color: rgb(0, 255, 64); font-size: 24px;">GAMEPLAY</h3>
+                        
+                            <p style="position: absolute; top: 1140px; left: 52.6%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                                Dive into a captivating adventure where every move matters. On "FightsCraft of Legends," the<br>
+                                gameplay experience is defined by unique features, including the ability to dual-wield weapons in both<br>
+                                hands. This tactical freedom allows players to customize their combat style, whether wielding a sword<br>and shield in tandem or adopting a more aggressive approach with a weapon in each hand.
+
+                                <img src="gameplay_image.jpg" alt="Visual Image" 
+                            style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%); z-index: 5; width: 100%; height: auto;">
+
+                        <p style="position: absolute; top: 1575px; left: 52.7%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                            The combat system is designed to be not only strategic but also fluid, offering seamless combos that<br>
+                            reward mastery of movements. Players can discover special chains, unlock unique skills, and refine<br>
+                            their technique as they progress. Every choice has an impact; every move can be the start of an epic<br>    
+                            combo, adding a dynamic and exhilarating dimension to each confrontation.<br>
+                            <br>
+                            "FightsCraft of Legends" emphasizes freedom of choice in combat, encouraging players to experiment<br>
+                            and develop their own style, creating a personalized and unforgettable gaming experience.
+
+                            <h4 style="position: absolute; top: 1700px; left: 34.8%; transform: translateX(-50%); z-index: 5; color: rgb(0, 255, 64); font-size: 24px;">MAP</h3>
+
+                                <p style="position: absolute; top: 1750px; left: 52.5%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                                    The map of the "FightsCraft of Legends" server is a true work of art in constant evolution, casting its<br>
+                                    charm beyond the visible horizons. The grand medieval cities, civilization's jewels, are not mere static<br>
+                                    decorations but vibrant centers of dynamic activities. Each of these cities hosts a simulated economy<br>
+                                    where players can trade, engage in local quests, and interact with NPCs full of personality.<br>
+                                    <br>
+                                    The vast expanses that stretch between these urban strongholds paint a diverse canvas of nature,<br>
+                                    offering adventures as rich as they are varied. From majestic snow-capped mountains to mystical<br>
+                                    forests teeming with strange creatures, every corner of the map reveals unique landscapes and<br>
+                                    mysteries to explore. These vast expanses are not just passageways but complete territories,<br>
+                                    inviting players to discover hidden secrets, lost dungeons, and unsuspected treasures.
+
+                                    <img src="map_image.jpg" alt="Map Image" 
+                                style="position: absolute; top: 190px; left: 50%; transform: translateX(-50%); z-index: 5; width: 100%; height: auto;">
+                                <p style="position: absolute; top: 2350px; left: 51.6%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                                    Navigating this expansive universe will require sharp survival skills, as the landscapes can be as<br>
+                                    dangerous as they are beautiful. Players will need to venture off the beaten paths to uncover<br>
+                                    secret locations, testing their ability to overcome the challenges of nature while exploring the<br>
+                                    mysteries hidden in the corners of each region.
+
+                                    <h4 style="position: absolute; top: 2415px; left: 38.3%; transform: translateX(-50%); z-index: 5; color: rgb(0, 255, 64); font-size: 24px;">ACCESSIBILITY</h3>
+
+                                        <p style="position: absolute; top: 2460px; left: 52.6%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                                            Committed to providing an inclusive experience, the "FightsCraft of Legends" server aims to make its<br>
+                                            world open to all adventurers. The ongoing development of a dedicated launcher is geared towards<br>
+                                            simplifying the connection process, providing a user-friendly interface that makes entering the server's<br>
+                                            universe easy.<br>
+                                            <br>
+                                            Whether you use a premium or cracked version of Minecraft, all players are welcome to join<br>
+                                            "FightsCraft of Legends" and take part in this epic journey, eliminating any barriers to adventure.<br>
+
+                                            <h5 style="position: absolute; top: 2570px; left: 38.6%; transform: translateX(-50%); z-index: 5; color: rgb(0, 255, 64); font-size: 24px;">TESTING PHASE</h5>
+
+                                            <p style="position: absolute; top: 2620px; left: 53.7%; transform: translateX(-50%); z-index: 5; color: white; text-align: left;">
+                                                Every suggestion, every shared experience, becomes a pillar upon which rests our tireless quest for<br>
+                                                perfection.<br>
+                                                —————<br>
+                                                This is a brief summary of what we've been working on in recent months. More details will follow in the<br>
+                                                coming months. Stay tuned, and make sure to join our Discord and follow for the latest updates and insights<br>
+                                                in the days ahead.<br>
+                                                <br>
+                                                <strong style="color: orange">-FightsCraft Of Legends Team.</strong><br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </header>
+                                    </section>
+                                </div>
+
+                                <a href="news-en-.html">
+                                    <button id="buttonBack">《Return</button>
+                                </a>
+
+                                <a href="index.html" id="logo">
+                                    <img src="logo.png" alt="Mon Logo">
+                                </a>
+                                <div id="language-dropdown" style="position: absolute; top: 10px; left: 87.3%; transform: translateX(-50%); z-index: 4; cursor: pointer;">
+                                    Languages
+                                    <ul class="language-list">
+                                        <li><a href="index.html">English</a></li>
+                                        <li><a href="index-fr-.html">Français</a></li>
+                                        <li><a href="index-es-.html">Español</a></li>
+                                    </ul>
+                                </div>
+                                <button id="buttonGeneral"></button>
+                            </header>
+                        
+                            <a href="index.html" id="logo2">
+                                <img src="logo2.png" alt="Deuxième Logo">
+                            </a>
+                        
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="news-en-.html">News</a></li>
+                                    <li><a href="https://discord.gg/wEUEX24Apt" target="_blank">Discord</a></li>
+                                </ul>
+                            </nav>
+
+                            <footer style="position: fixed; bottom: 10px; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: white; text-align: center; padding: 10px; margin-top: -10px; z-index: 9999;">
+                                © 2024 FightsCraft Of Legend
+                            </footer>
+                            </main>
+                            
+                            <footer style="position: fixed; bottom: 10px; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: white; text-align: center; padding: 10px; margin-top: -10px; z-index: 9999;">
+                                © 2024 FightsCraft Of Legend
+                            </footer>
+                            </main>
+                            
+                            <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var languageDropdown = document.getElementById("language-dropdown");
+                                var languageList = document.querySelector(".language-list");
+                            
+                                languageDropdown.addEventListener("click", function (event) {
+                                    event.stopPropagation();
+                            
+                                    if (languageList.style.display === "block") {
+                                        languageList.style.display = "none";
+                                    } else {
+                                        languageList.style.display = "block";
+                                    }
+                                });
+                            
+                                document.addEventListener("click", function () {
+                                    languageList.style.display = "none";
+                                });
+                            });
+                            </script>
+                            
+                            </body>
+                            
+                            </html>

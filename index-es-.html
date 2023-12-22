@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home/styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 190px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+
+        #logo {
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+        }
+
+        #logo img {
+            width: 360px;
+            height: auto;
+        }
+
+        #logo2 {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            z-index: 4;
+        }
+
+        #logo2 img {
+            width: 80px;
+            height: auto;
+        }
+
+        nav {
+            background-color: transparent;
+            text-align: right;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+        }
+
+        nav::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        #language-dropdown {
+        position: absolute;
+        top: 10px;
+        left: 50%; /* Ajout de cette ligne pour centrer horizontalement */
+        transform: translateX(-50%); /* Pour ajuster le centrage */
+        z-index: 4;
+        cursor: pointer;
+        }
+
+        #language-dropdown:hover .language-list {
+            display: block;
+        }
+
+        .language-list {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+            margin: 0;
+            top: 30px;
+            right: 0;
+            z-index: 5;
+        }
+
+        .language-list li {
+            margin-bottom: 5px;
+        }
+
+        .language-list a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin-top: 60px;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        main h1 {
+            font-size: 36px;
+            color: orange;
+        }
+
+        main p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>FightsCraft Of Legends</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="logo.png" alt="Mon Logo">
+        </a>
+        <div id="language-dropdown" style="position: absolute; top: 10px; left: 87.3%; transform: translateX(-50%); z-index: 4; cursor: pointer;">
+            Languages
+            <ul class="language-list">
+                <li><a href="index.html">English</a></li>
+                <li><a href="index-fr-.html">Français</a></li>
+                <li><a href="index-es-.html">Español</a></li>
+            </ul>
+        </div>
+        <button id="buttonGeneral"></button>
+    </header>
+
+    <a href="index-es-.html" id="logo2">
+        <img src="logo2.png" alt="Deuxième Logo">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news-es-.html">News</a></li>
+            <li><a href="https://discord.gg/wEUEX24Apt" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="position: absolute; top: 180%; left: 50%; transform: translate(-50%, -50%); color: orange;">Bienvenido a FightsCraft Of Legends !</h1>
+        <p style="position: absolute; top: 470%; left: 50%; transform: translate(-50%, -50%); color: white;">
+            Sumérgete en el extraordinario mundo de "FightsCraft of Legends", un innovador<br>
+            servidor de Minecraft donde cada detalle ha sido cuidadosamente elaborado para<br>
+            brindar una experiencia de juego sin igual. Explora paisajes encantadores,<br>
+            domina un sistema de combate táctico y atraviesa un mapa<br>
+            dinámico con vastos horizontes medievales. Nuestro compromiso con<br>
+            la inclusividad garantiza que todos los aventureros, ya sea que utilicen<br>
+             versiones premium o piratas, son bienvenidos a unirse a esta épica travesía.<br>
+            <br>
+            Aquí hay algunas ilustraciones que describen mejor el futuro servidor.
+        </p>
+
+        <div style="position: absolute; top: 780%; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center;">
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <a href="1.jpg" target="_blank"><img src="1.jpg" alt="Image 1" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+                <a href="2.jpg" target="_blank"><img src="2.jpg" alt="Image 2" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+                <a href="3.jpg" target="_blank"><img src="3.jpg" alt="Image 3" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+            </div>
+        
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <a href="4.jpg" target="_blank"><img src="4.jpg" alt="Image 4" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+                <a href="5.jpg" target="_blank"><img src="5.jpg" alt="Image 5" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+                <a href="6.png" target="_blank"><img src="6.png" alt="Image 6" style="width: 200px; height: auto; margin: 0 10px 20px 10px;"></a>
+            </div>
+        
+        </div>
+
+        <p style="position: absolute; top: 1450%; left: 50%; transform: translate(-50%, -50%); color: white;">
+            Ten en cuenta que el servidor está actualmente en desarrollo y estará disponible a <br>
+            principios de 2024. Para mantenerte informado sobre las últimas noticias y el<br>
+            progreso del desarrollo, visita la sección <a href="news-es-.html" style="color: darkviolet; text-decoration: underline;">"News"</a>.
+        </p>
+
+        <footer style="position: fixed; bottom: 10px; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: white; text-align: center; padding: 10px; margin-top: -10px; z-index: 9999;">
+            © 2024 FightsCraft Of Legend
+        </footer>
+        </main>
+        
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var languageDropdown = document.getElementById("language-dropdown");
+            var languageList = document.querySelector(".language-list");
+        
+            languageDropdown.addEventListener("click", function (event) {
+                event.stopPropagation(); // Empêche la propagation du clic pour éviter la fermeture immédiate
+        
+                // Bascule la visibilité du menu déroulant
+                if (languageList.style.display === "block") {
+                    languageList.style.display = "none";
+                } else {
+                    languageList.style.display = "block";
+                }
+            });
+        
+            // Ferme le menu déroulant si l'utilisateur clique à l'extérieur de celui-ci
+            document.addEventListener("click", function () {
+                languageList.style.display = "none";
+            });
+        });
+        </script>
+        
+        </body>
+        
+        </html>
